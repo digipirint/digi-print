@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دیجی پرینت | فروش کارتریج و ملزومات چاپ</title>
+  <meta name="description" content="فروش آنلاین کارتریج پرینتر و ملزومات چاپ از برندهای معتبر">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">DP</span>
+        <span><b>دیجی پرینت</b><small>مرکز تخصصی کارتریج</small></span>
+      </a>
+      <nav>
+        <a href="#home">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#brands">برندها</a>
+        <a href="#contact">تماس با ما</a>
+      </nav>
+      <button class="cart-btn" id="cartButton">🛒 سبد خرید <span id="cartCount">۰</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">فروش تخصصی کارتریج پرینتر</span>
+          <h1>چاپ حرفه‌ای،<br><em>بدون دردسر</em></h1>
+          <p>کارتریج‌های باکیفیت Canon، HP، Samsung، Brother و Ricoh با ارسال سریع و پشتیبانی تخصصی.</p>
+          <a class="primary-btn" href="#products">مشاهده محصولات ←</a>
+        </div>
+        <div class="hero-card">
+          <div class="printer-icon">🖨️</div>
+          <div class="gold-line"></div>
+          <h3>کیفیت واقعی چاپ</h3>
+          <p>انتخاب مطمئن برای خانه و کسب‌وکار</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container feature-grid">
+        <div><b>✓ ضمانت کیفیت</b><span>انتخاب مطمئن محصول</span></div>
+        <div><b>⚡ ارسال سریع</b><span>بسته‌بندی ایمن و سریع</span></div>
+        <div><b>☎ پشتیبانی تخصصی</b><span>راهنمایی قبل و بعد از خرید</span></div>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">پرفروش‌ترین‌ها</span><h2>محصولات منتخب</h2></div>
+          <div class="filters">
+            <button class="filter active" data-brand="همه">همه</button>
+            <button class="filter" data-brand="HP">HP</button>
+            <button class="filter" data-brand="Canon">Canon</button>
+            <button class="filter" data-brand="Samsung">Samsung</button>
+            <button class="filter" data-brand="Brother">Brother</button>
+            <button class="filter" data-brand="Ricoh">Ricoh</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="brands" id="brands">
+      <div class="container">
+        <span class="eyebrow">برندهای موجود</span>
+        <h2>برندهای معتبر، انتخاب مطمئن</h2>
+        <div class="brand-list">
+          <span>HP</span><span>CANON</span><span>SAMSUNG</span><span>BROTHER</span><span>RICOH</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-box">
+        <div><span class="eyebrow">پشتیبانی</span><h2>برای انتخاب کارتریج مناسب کمک می‌خواهید؟</h2><p>مدل پرینترتان را برای ما بفرستید تا محصول مناسب را پیدا کنید.</p></div>
+        <a class="primary-btn" href="tel:+989000000000">تماس با پشتیبانی</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><b>دیجی پرینت</b><span>© 2026 تمامی حقوق محفوظ است.</span></div></footer>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head"><h3>سبد خرید</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>جمع کل</span><strong id="cartTotal">۰ تومان</strong></div>
+    <button class="checkout-btn" id="checkout">ثبت سفارش</button>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
