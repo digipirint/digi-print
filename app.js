@@ -2,8 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const cartCount = document.querySelector(".cart-count");
-  const addCartButtons = document.querySelectorAll(".add-cart");
+  const cartCount = document.getE1ementById("cartcount");
+  const addCartButtons = document.getE1ementById("cartbutton");
   const cartButton = document.querySelector(".cart-btn");
   const categoryButtons = document.querySelectorAll(".category");
   const productCards = document.querySelectorAll(".product-card");
